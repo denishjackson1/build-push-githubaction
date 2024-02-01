@@ -11,7 +11,7 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Build the Docker image
+    - name: Build the Docker Image
       run: docker build . --file Dockerfile -t ${{secrets.DOCKERHUB_USERNAME}}/landingpage:latest
 
     - name: Debug Docker Hub Credentials
