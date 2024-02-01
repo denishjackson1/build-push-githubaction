@@ -47,18 +47,27 @@ This repository contains an application ready to be Dockerized and pushed to Doc
         ```        
 ### Add Docker Hub Secrets:
 
-Go to your GitHub repository.
+    - Go to your GitHub repository.
 
-Click on `"Settings"` and then `"Secrets and Variables"`.
+    - Click on `"Settings"` and then `"Secrets and Variables"`.
 
-Click on `Actions` and `New Repository Secrets` to add two secrets: `DOCKERHUB_USERNAME` (your Docker Hub username) and `DOCKERHUB_TOKEN` (your Docker Hub access token or password).
+    - Click on `Actions` and `New Repository Secrets` to add two secrets: `DOCKERHUB_USERNAME` (your Docker Hub username) and `DOCKERHUB_TOKEN` (your Docker Hub access    token or password).
 
 ### Customize Workflow:
 
-Replace `your-image-name` with the actual name of your Docker image.
+    Replace `your-image-name` with the actual name of your Docker image.
 
-Ensure that your Dockerfile is correctly configured and located in the root directory of your repository.
+    Ensure that your Dockerfile is correctly configured and located in the root directory of your repository.
 
 ### Commit and Push:
 
-Commit the changes and push them to your repository. The workflow will automatically trigger on pushes to the main branch.
+    Commit the changes and push them to your repository. The workflow will automatically trigger on pushes to the main branch.
+
+Confirm the Pipeline is Successful and image has been push to DockerHub Registry.
+
+**GitHub Action Status**
+
+![Alt text](image-1.png)
+
+**DockerHub Image**
+![Alt text](image.png)
