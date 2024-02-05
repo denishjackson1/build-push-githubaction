@@ -6,13 +6,13 @@ This repository contains an application ready to be Dockerized and pushed to Doc
 
 Create a Dockerfile in the root directory of your application. The Dockerfile contains instructions for building the Docker image for your application. For this application, we shall use Nginx
 
-    ```bash
-    # Use an official Node.js runtime as the base image
-    FROM node:14
+```bash
+# Use an official Node.js runtime as the base image
+FROM node:14
 
-    # Set the working directory in the container
-    WORKDIR /usr/src/app
-    ```
+# Set the working directory in the container
+WORKDIR /usr/src/app
+```
 Customize the Dockerfile according to your application's requirements.
 
 ### Workflow Setup
